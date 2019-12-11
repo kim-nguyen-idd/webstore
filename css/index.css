@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+:root {
+   
+    --bg: #FFFFFF;
+    --pri-dark: #08232E;
+    --light-grey: #E6E5ED;
+    --sec-grey: #707070;
+
+    --dark-b: #6462d2;
+    --accent: #F0C05F;
+
+    --sans-bold: 'Karla', sans-serif;
+    --sans-light: 'Lato', sans-serif;
+
+}
+body {
+    background-color: var(--bg);
+    color: var(--pri-dark);
+    font-family: var(--sans-light);
+    font-size: 1.2em;
+    width: 100vw;
+}
+
+footer { 
+    background-color: tan;
+    padding: 0.5em;
+    border-radius: 12px;
+}
+
+header a {
+    color: var(--accent);
+}
+a {
+    text-decoration: none;
+}
+
+.top-nav a:hover { 
+    background-color: var(--dark-b);
+    padding: 0.2em;
+    border-radius: 10px;
+}
+.bottom-nav a:hover {
+    color: white;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+    font-weight: 700;
+}
+
+legend {
+    font-weight: 700;
+}
+
+.top-nav {
+    background-color: var(--pri-dark);
+    color: black;
+    font-family: var(--sans-bold);
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: 700;
+    align-self: center;
+    padding: 1.3em;
+    text-decoration: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo logo logo ham"
+        "search search search fav-cart "
+        "cat1 cat1 cat1 cat1"
+    ;
+    
+}
+
+.logo {
+    grid-area: logo;
+    font-size: 1.3em;
+}
+
+.ham-menu {
+    text-align: right;
+    padding: 0 0.2em;
+}
+.ham-icon {
+    grid-area: ham;
+    
+}
+
+.fav-cart {
+    text-align: right;
+    padding: 0.7em 0.2em;
+}
+.fav-cart li {
+    display: inline-block;
+}
+
+.search-grid {
+    grid-area: search;
+}
+.search-bar {
+    font-size: 0.75em;
+    padding: 0.75em 0;
+    display: inline-block;
+    line-height: 1.3em;
+
+}
+
+.new-products-category {
+    background-color: var(--accent);
+    text-align: center;
+    font-style: italic;
+}
+
+.new-prod {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 1em;
+}
+.cat-nav {
+    font-size: 0.8em;
+    padding: 1.2em;
+    grid-area: cat1;
+}
+.cat-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+
+}
+.cat-grid li {
+    padding: 0 0.5em;
+}
+
+
+.pages {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    padding: 0 1em 3em 1em;
+
+}
+
+.pg-line {
+    padding: 0.8em 1em 1em 1em;
+    text-align: center;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.pg-num li{
+    display: inline-block;
+    text-align: center;
+}
+.pg-num {
+    text-align: center;
+}
+
+.pg-num li a {
+    padding: 0 0.5em;
+}
+
+button {
+    background-color: var(--dark-b);
+    color: white;
+    padding: 0.2em 0.4em 0.1em 0.4em;
+    border: none;
+    border-radius: 14px;
+    display: inline-block;
+}
+
+.products-list {
+    background-color: white;
+}
+
+.product {
+    padding: 1em 1.3em 1em 1.3em;
+}
+
+.p-custom fieldset {
+    text-decoration: none;
+}
+
+.p-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em;
+}
+
+.product-name {
+    font-size: 1.2em;
+    color: var(--dark-b);
+    font-weight: 700;
+
+}
+.product-deets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5em 1em;
+}
+
+.product-deets ul{
+    display: inline;
+}
+
+h5 {
+    font-weight: 700;
+    padding: 0.3em 0;
+}
+.filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+}
+
+.filter-grid fieldset {
+    padding: 0.5em;
+    text-align: left;
+}
+
+.show-price select, .show-product-type select, .show-product-origin select {
+    background-color: var(--light-grey);
+}
+.show-price label, .show-product-type label, .show-product-origin label {
+    font-weight: 700;
+}
+
+.result-head {
+    background: var(--light-grey);
+}
+.blend {
+    font-weight: 700;
+    font-style: italic;
+    padding: 0.5em 0;
+}
+
+.p-cost, .origin {
+    font-size: 1.1em;
+    color: var(--sec-grey);
+}
+
+.canna-type {
+    font-family: var(--sans-bold);
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.thc-lvl, .cbd-lvl {
+    padding: 0.5em 0;
+}
+
+.callout {
+    font-size: 0.5em;
+    background-color: pink;
+    padding: 0.3em;
+    border-radius: 12px;
+}
+
+.full-fave {
+    color: peru;
+}
+
+.bottom-nav {
+    background-color: lightsteelblue;
+    padding: 2em 1.5em 0em 1.5em;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.site-map {
+    padding: 0.5em 1em 1.5em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.site-map ul li {
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 0.6em 0;
+}
+
+ol { 
+    display: block;
+    padding: 0;
+}
+
+h4 {
+    padding: 1em 0;
+}
+
+.socials {
+    padding: 2em;
+    text-align: center;
+}
+
+.socials ul li{
+    padding: 1em 0.5em;
+    display: inline;
+}
+
+.socials p {
+    padding: 0.6em 0 0 0;
+}
+
+.copy-i {
+    font-size: 0.7em;
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--sans-bold);
+}
+
+
+@media screen and (min-width: 768px) {
+    .p-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
